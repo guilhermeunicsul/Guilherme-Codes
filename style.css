@@ -27,6 +27,7 @@ ul {
 
 ul li {
     list-style: none;
+    color: var(--cor-text);
     display: inline-block;
     margin: 0px 10px 0px 10px;
     text-align: center;    
