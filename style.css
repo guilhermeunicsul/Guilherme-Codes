@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-pri:#DCEDFF;
+    --cor-sec: #94B0DA;
+    --cor-terc: #586f93;
+    --cor-text: #1B2E4B;
+    --cor-text-sec: #B8CFED;
+}
+
+body {
+    background-color: var(--cor-sec);
+    font-family: "montserrat";
+}
+
+header {
+    background-color: var(--cor-pri);
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    text-align: center;    
+}
+
+a {
+    text-decoration: none;
+}
+
+.title-head {
+    color: var(--cor-text);
+    padding: 20px;
+}
+
+div {
+    display: flex;
+    width: 100%;
+}
+
+.html {
+    text-align: center;
+    margin: 10px auto;
+    color: var(--cor-text-sec);
+    background: linear-gradient(90deg, #E9611E,#5992CA);
+    border: 2px solid var(--cor-pri);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.js {
+    text-align: center;
+    margin: 10px auto;
+    color: var(--cor-text);
+    background: linear-gradient(90deg, #e3ae2e,#f2e21b);
+    border: 2px solid var(--cor-pri);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.csharp {
+    text-align: center;
+    margin: 10px auto;
+    color: var(--cor-text-sec);
+    background: linear-gradient(90deg, #9f76db,#330077);
+    border: 2px solid var(--cor-pri);
+    border-radius: 10px 10px 10px 10px;
+}
+
+img {
+    border-radius: 10px 10px 0px 0px;
+    width: 300px;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+button {
+    margin-top:10px ;
+    margin-bottom: 25px;
+    background-color: var(--cor-pri);
+    color: var(--cor-text);
+    padding: 5px 10px 5px 10px;
+    border: 2px solid #47A0FF;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+figure:hover {
+
+    figcaption {
+        animation: subt 2s;
+        font-size: 26px;
+    }
+
+    img {
+        animation-name: img;
+        animation-duration: 2s;
+        width: 336px;
+    }
+    button {
+        animation: botao 2s,botao-bg 3s 2s infinite;
+        padding: 10px 20px 10px 20px;
+    }
+    animation-name: figure;
+    animation-duration: 2s;
+    box-shadow: 0px 0px 50px black;
+    width: 340px;
+    height: 354.8px;
+}
+
+footer {
+    background-color: var(--cor-pri);
+    text-align: center;
+}
+
+footer>p {
+    padding: 20px;
+}
+
+@keyframes botao {
+    0% {text-align: center;padding: 5px 10px 5px 10px;}
+    100% {text-align: center;padding: 10px 20px 10px 20px;}
+}
+
+@keyframes botao-bg {
+    0% {text-align: center;background-color: var(--cor-pri);}
+    25% {text-align: center;background-color: var(--cor-sec);}
+    50%{text-align: center;background-color: var(--cor-terc);}
+    75%{text-align: center;background-color: var(--cor-sec);}
+    100%{text-align: center;background-color: var(--cor-pri);}
+}
+
+@keyframes figure {
+    0%{height: 319.8px; width: 300px; box-shadow: 0px 0px 3px black;}
+    100%{height: 354.8px; width: 340px; box-shadow: 0px 0px 50px black;}
+}
+
+@keyframes img {
+    0%{width: 296px;}
+    100%{width: 336x;}
+}
+
+@keyframes subt {
+    0%{font-size: 16px;}
+    100%{font-size: 26px;}
+}
