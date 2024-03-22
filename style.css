@@ -89,6 +89,8 @@ figcaption {
 }
 
 button {
+    display: inline-flex;
+    justify-content: center;
     margin-top:10px ;
     margin-bottom: 25px;
     background-color: var(--cor-pri);
@@ -97,7 +99,14 @@ button {
     border: 2px solid #47A0FF;
     border-radius: 5px;
     text-transform: uppercase;
+    align-items: center;
     font-weight: bold;
+}
+
+.bag {
+    width: 20px;
+    height: 20px;
+    margin: 0;
 }
 
 figure:hover {
@@ -115,6 +124,11 @@ figure:hover {
     button {
         animation: botao 2s,botao-bg 3s 2s infinite;
         padding: 10px 20px 10px 20px;
+    }
+    .bag {
+        animation: bag 2s;
+        width: 20px;
+        height: 20px;
     }
     animation-name: figure;
     animation-duration: 2s;
@@ -158,4 +172,9 @@ footer>p {
 @keyframes subt {
     0%{font-size: 16px;}
     100%{font-size: 26px;}
+}
+
+@keyframes bag {
+    0%{width: 20px;height: 20px;}
+    100%{width: 20px;height: 20px;}
 }
